@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniTech | BLOG</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Remix icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+
+    <nav class="navbar container">
+
+      <a href="./index.html">
+        <h2 class="logo">UniTech</h2>
+      </a>
+
+      <div class="menu" id="menu">
+
+        <ul class="list">
+          <li class="list-item">
+            <a href="#" class="list-link current">Início</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">Categorias</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">Opinião</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">Notícias</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">Associados</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">Contato</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link screen-lg-hidden">Entrar</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link screen-lg-hidden">Sair</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list list-right">
+
+        <button class="btn place-items-center" id="theme-toggle-btn">
+          <i class="ri-sun-line sun-icon"></i>
+          <i class="ri-moon-line moon-icon"></i>
+        </button>
+
+        <button class="btn place-items-center" id="search-icon">
+          <i class="ri-search-line"></i>
+        </button>
+
+        <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+          <i class="ri-menu-3-line open-menu-icon"></i>
+          <i class="ri-close-line close-menu-icon"></i>
+        </button>
+
+        <a href="#" class="list-link screen-sm-hidden">Cadastrar</a>
+        <a href="#" class="list-link screen-sm-hidden btn sign-up-btn fancy-border">
+          <span>Entrar</span>
+        </a>
+      </div>
+
+    </nav>
+
+  </header>
+  <!-- Search -->
+  <div class="search-form-container container" id="search-form-container">
+
+    <div class="form-container-inner">
+
+      <form action="" class="form">
+        <input type="text" class="form-input" placeholder="O que está procurando?">
+        <button class="btn form-btn" type="submit">
+          <i class="ri-search-line"></i>
+        </button>
+      </form>
+      <span class="form-note">Ou Pressione ESC para sair</span>
+    </div>
+
+    <button class="btn form-close-btn place-items-center" id="form-close-btn">
+      <i class="ri-close-line"></i>
+    </button>
+  </div>
+  <!-- Featured articles -->
+  <section class="featured-articles section-header-offset">
+
+    <div class="featured-articles-container container d-grid">
+
+      <div class="featured-content d-grid">
+
+        <div class="headline-banner">
+          <h3 class="headline fancy-border">
+            <span class="place-items-center">Artigos Atuais</span>
+          </h3>
+          <span class="headline-description">Alguma notícia aleatória...</span>
+        </div>
+
+        <a href="https://imasters.com.br/carreira-dev/desafios-em-recrutar-profissionais-de-ti" class="article featured-article featured-article-1">
+
+          <img src="./assets/images/noticias/contrato.jpg" alt="contrato" class="article-img">
+          <span class="article-category">Tecnologia</span>
+
+          <div class="article-data-container">
+
+            <div class="article-data">
+              <span>04/11/2022</span>
+              <span class="article-data-spacer"></span>
+              <span>Escrito a 10min</span>
+            </div>
+
+            <h3 class="title article-title">Desafios em recrutar profissionais de TI</h3>
+          </div>
+        </a>
+
+        <a href="https://valor.globo.com/impresso/noticia/2022/11/03/setor-de-ti-ve-cenario-propicio-a-inovacao.ghtml" class="article featured-article featured-article-2">
+
+          <img src="./assets/images/noticias/inovacao.jpg" alt="inovacao" class="article-img">
+          <span class="article-category">Tecnologia</span>
+
+          <div class="article-data-container">
+
+            <div class="article-data">
+              <span>01/11/2022</span>
+              <span class="article-data-spacer"></span>
+              <span>Escrito a 10min</span>
+            </div>
+
+            <h3 class="title article-title">Setor de TI vê cenário propício à inovação </h3>
+          </div>
+        </a>
+
+        <a href="https://portaldobitcoin.uol.com.br/" class="article featured-article featured-article-3">
+
+          <img src="./assets/images/noticias/bitcoin.jpg" alt="btc" class="article-img">
+          <span class="article-category">Financeiro</span>
+
+          <div class="article-data-container">
+
+            <div class="article-data">
+              <span>05 Mar de 2022</span>
+              <span class="article-data-spacer"></span>
+              <span>escrito a 10min</span>
+            </div>
+
+            <h3 class="title article-title">Bitcoin, a nova economia e o futuro do dinheiro</h3>
+          </div>
+        </a>
+      </div>
+      <!-- Sidebar -->
+      <div class="sidebar d-grid">
+
+        <h3 class="title featured-content-title">Mais lidos</h3>
+
+        <a href="https://avalanchenoticias.com.br/mercado-de-tecnologia-e-ti-noticia/os-fabricantes-de-componentes-estao-anulando-os-esforcos-dos-gigantes-de-ti-para-mudar-para-a-energia-verde/" class="trending-news-box">
+          <div class="trending-news-image-box">
+            <span class="trending-number place-items-center">01</span>
+            <img src="./assets/images/noticias/poluicao.jpg" alt="energiaverde" class="article-img">
+          </div>
+
+          <div class="trending-news-data">
+
+            <div class="article-data">
+              <span>04/11/2022</span>
+              <span class="article-data-spacer"></span>
+              <span>Escrito a 10min</span>
+            </div>
+
+            <h3 class="title article-title">Energia Verde?</h3>
+          </div>
+        </a>
+
+        <a href="#" class="trending-news-box">
+          <div class="trending-news-image-box">
+            <span class="trending-number place-items-center">02</span>
+            <img src="./assets/images/noticias/ti.jpg" alt="economia" class="article-img">
+          </div>
+
+          <div class="trending-news-data">
+
+            <div class="article-data">
+              <span>05/11/2022</span>
+              <span class="article-data-spacer"></span>
+              <span>Escrito a 10min</span>
+            </div>
+
+            <h3 class="title article-title">Mercado de TI, esta em alta.</h3>
+          </div>
+        </a>
+
+        <a href="https://www.jornalintegracao.com/noticia/27711/disciplinas-em-ti-despontam-como-aliadas-das-organizacoes-na-protecao-de-dados" class="trending-news-box">
+          <div class="trending-news-image-box">
+            <span class="trending-number place-items-center">03</span>
+            <img src="./assets/images/noticias/dados.jpg" alt="dados" class="article-img">
+          </div>
+
+          <div class="trending-news-data">
+
+            <div class="article-data">
+              <span>04/11/2022</span>
+              <span class="article-data-spacer"></span>
+              <span>Escrito a 10min</span>
+            </div>
+
+            <h3 class="title article-title">Proteção de Dados.</h3>
+          </div>
+        </a>
+
+        <a href="https://forbes.com.br/carreira/2022/10/lucros-do-mercado-tech-caem-com-a-falta-de-talentos/" class="trending-news-box">
+          <div class="trending-news-image-box">
+            <span class="trending-number place-items-center">04</span>
+            <img src="./assets/images/noticias/profissionais.jpg" alt="falta" class="article-img">
+          </div>
+
+          <div class="trending-news-data">
+
+            <div class="article-data">
+              <span>02/11/2022</span>
+              <span class="article-data-spacer"></span>
+              <span>Escrito a 10min</span>
+            </div>
+
+            <h3 class="title article-title">Falta de Profissionais de TI.</h3>
+          </div>
+        </a>
+
+        <a href="https://www.segs.com.br/info-ti/362425-fim-dos-cookies-marcas-tem-a-oportunidade-de-desenvolver-outra-relacao-com-os-clientes" class="trending-news-box">
+          <div class="trending-news-image-box">
+            <span class="trending-number place-items-center">05</span>
+            <img src="./assets/images/noticias/cookie.jpg" alt="cookies" class="article-img">
+          </div>
+
+          <div class="trending-news-data">
+
+            <div class="article-data">
+              <span>04/11/2022</span>
+              <span class="article-data-spacer"></span>
+              <span>Escrito a 10min</span>
+            </div>
+
+            <h3 class="title article-title">Fim dos Cookies.</h3>
+          </div>
+        </a>
+
+        <a href="https://oglobo.globo.com/blogs/pense-grande/post/2022/11/startup-geekhunter-cresce-recrutando-profissionais-de-ti.ghtml" class="trending-news-box">
+          <div class="trending-news-image-box">
+            <span class="trending-number place-items-center">06</span>
+            <img src="./assets/images/noticias/geek.png" alt="startup" class="article-img">
+          </div>
+
+          <div class="trending-news-data">
+
+            <div class="article-data">
+              <span>05/11/2022</span>
+              <span class="article-data-spacer"></span>
+              <span>Escrito a 10min</span>
+            </div>
+
+            <h3 class="title article-title">GeekHunter anuncia 500 vagas.</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Quick read -->
+  <section class="quick-read section">
+
+    <div class="container">
+
+      <h2 class="title section-title" data-name="Leitura Rápida">Leitura Rápida</h2>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+
+          <a href="https://www.bing.com/search?q=nasa+space+apps&cvid=2293e5978b0b48bb82aa7cbf39eff60f&aqs=edge.0.0l2j69i57j0l6.6863j0j4&FORM=ANAB01&PC=U531" class="article swiper-slide">
+            <img src="./assets/images/noticias/nasa.png" alt="" class="article-img">
+
+            <div class="article-data-container">
+
+              <div class="article-data">
+                <span>25/10/2022</span>
+                <span class="article-data-spacer"></span>
+                <span>Escrito a 10min</span>
+              </div>
+
+              <h3 class="title article-title">MISSION COMPLETE: SPACE APPS 2022</h3>
+            </div>
+          </a>
+
+          <a href="https://www.tcs.com/" class="article swiper-slide">
+            <img src="./assets/images/noticias/tcs.png" alt="" class="article-img">
+
+            <div class="article-data-container">
+
+              <div class="article-data">
+                <span>05/11/2022</span>
+                <span class="article-data-spacer"></span>
+                <span>Escrito a 10min</span>
+              </div>
+
+              <h3 class="title article-title">Tcs abre Bootcamp5</h3>
+            </div>
+          </a>
+
+          <a href="#" class="article swiper-slide">
+            <img src="./assets/images/noticias/placa.jpg" alt="" class="article-img">
+
+            <div class="article-data-container">
+
+              <div class="article-data">
+                <span>05/11/2022</span>
+                <span class="article-data-spacer"></span>
+                <span>Escrito a 10min</span>
+              </div>
+
+              <h3 class="title article-title">Preços de placas de vídeo continuam caindo!</h3>
+            </div>
+          </a>
+
+
+
+        </div>
+
+        <div class="swiper-button-prev swiper-control"></div>
+        <div class="swiper-button-next swiper-control"></div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Older posts -->
+  <section class="popular-tags section">
+
+    <div class="container">
+
+      <h2 class="section-title title" data-name="Artigos Populares">Artigos Populares</h2>
+
+      <div class="popular-tags-container d-grid">
+
+        <a href="https://www.oracle.com/br/artificial-intelligence/what-is-ai/" class="article">
+          <span class="tag-name">#Inteligência Artificial</span>
+          <img src="./assets/images/noticias/ia.jpg" alt="" class="article-img">
+        </a>
+
+        <a href="https://mundoeducacao.uol.com.br/informatica/hardware-software.htm#:~:text=Hardware%20%C3%A9%20a%20parte%20f%C3%ADsica,algum%20tipo%20de%20processamento%20computacional." class="article">
+          <span class="tag-name">#Hardware</span>
+          <img src="./assets/images/noticias/hardware.jpg" alt="" class="article-img">
+        </a>
+
+        <a href="https://mundoeducacao.uol.com.br/informatica/hardware-software.htm#:~:text=Hardware%20%C3%A9%20a%20parte%20f%C3%ADsica,algum%20tipo%20de%20processamento%20computacional." class="article">
+          <span class="tag-name">#Software</span>
+          <img src="./assets/images/noticias/software.jpg" alt="" class="article-img">
+        </a>
+
+        <a href="#" class="article">
+          <span class="tag-name">#Tecnologia</span>
+          <img src="./assets/images/noticias/tec.jpg" alt="" class="article-img">
+        </a>
+
+        <a href="https://azure.microsoft.com/pt-br/free/azure-vs-aws/search/?OCID=AIDcmmzmnb0182_SEM_4f0d558c1fb11d94e97036e88fffbdb2:G:s&ef_id=4f0d558c1fb11d94e97036e88fffbdb2:G:s&msclkid=4f0d558c1fb11d94e97036e88fffbdb2" class="article">
+          <span class="tag-name">#Cloud</span>
+          <img src="./assets/images/noticias/cloud.png" alt="" class="article-img">
+        </a>
+
+        <a href="https://www.kaspersky.com/resource-center/definitions/what-is-cyber-security" class="article">
+          <span class="tag-name">#Cyber Security</span>
+          <img src="./assets/images/noticias/Security.jpg" alt="" class="article-img">
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="older-posts section">
+
+    <div class="container">
+
+      <h2 class="section-title title" data-name="Outros Artigos">Outros Artigos</h2>
+
+      <div class="older-posts-grid-wrapper d-grid">
+
+        <a href="#" class="article d-grid">
+          <div class="older-posts-article-image-wrapper">
+            <img src="./assets/images/noticias/danger.jpg" alt="" class="article-img">
+          </div>
+
+          <div class="article-data-container">
+
+            <div class="article-data">
+              <span>05 Mar de 2022</span>
+              <span class="article-data-spacer"></span>
+              <span>escrito a 10min</span>
+            </div>
+
+            <h3 class="title article-title">Futuras notícias.</h3>
+            <p class="article-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut explicabo ipsam
+              molestias praesentium amet, facilis voluptas tenetur ipsa alias.</p>
+          </div>
+        </a>
+
+        <a href="#" class="article d-grid">
+          <div class="older-posts-article-image-wrapper">
+            <img src="./assets/images/noticias/danger.jpg" alt="" class="article-img">
+          </div>
+
+          <div class="article-data-container">
+
+            <div class="article-data">
+              <span>05 Mar de 2022</span>
+              <span class="article-data-spacer"></span>
+              <span>escrito a 10min</span>
+            </div>
+
+            <h3 class="title article-title">Futuras notícias.</h3>
+            <p class="article-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut explicabo ipsam
+              molestias praesentium amet, facilis voluptas tenetur ipsa alias.</p>
+          </div>
+        </a>
+
+        <a href="#" class="article d-grid">
+          <div class="older-posts-article-image-wrapper">
+            <img src="./assets/images/noticias/danger.jpg" alt="" class="article-img">
+          </div>
+
+          <div class="article-data-container">
+
+            <div class="article-data">
+              <span>05 Mar de 2022</span>
+              <span class="article-data-spacer"></span>
+              <span>escrito a 10min</span>
+            </div>
+
+            <h3 class="title article-title">Futuras notícias.</h3>
+            <p class="article-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut explicabo ipsam
+              molestias praesentium amet, facilis voluptas tenetur ipsa alias.</p>
+          </div>
+        </a>
+
+        <a href="#" class="article d-grid">
+          <div class="older-posts-article-image-wrapper">
+            <img src="./assets/images/noticias/danger.jpg" alt="" class="article-img">
+          </div>
+
+          <div class="article-data-container">
+
+            <div class="article-data">
+              <span>05 Mar de 2022</span>
+              <span class="article-data-spacer"></span>
+              <span>escrito a 10min</span>
+            </div>
+
+            <h3 class="title article-title">Futuras notícias.</h3>
+            <p class="article-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut explicabo ipsam
+              molestias praesentium amet, facilis voluptas tenetur ipsa alias.</p>
+          </div>
+        </a>
+
+        <a href="#" class="article d-grid">
+          <div class="older-posts-article-image-wrapper">
+            <img src="./assets/images/noticias/danger.jpg" alt="" class="article-img">
+          </div>
+
+          <div class="article-data-container">
+
+            <div class="article-data">
+              <span>05 Mar de 2022</span>
+              <span class="article-data-spacer"></span>
+              <span>escrito a 10min</span>
+            </div>
+
+            <h3 class="title article-title">Futuras notícias.</h3>
+            <p class="article-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut explicabo ipsam
+              molestias praesentium amet, facilis voluptas tenetur ipsa alias.</p>
+          </div>
+        </a>
+
+        <a href="#" class="article d-grid">
+          <div class="older-posts-article-image-wrapper">
+            <img src="./assets/images/noticias/danger.jpg" alt="" class="article-img">
+          </div>
+
+          <div class="article-data-container">
+
+            <div class="article-data">
+              <span>05 Mar de 2022</span>
+              <span class="article-data-spacer"></span>
+              <span>escrito a 10min</span>
+            </div>
+
+            <h3 class="title article-title">Futuras notícias.</h3>
+            <p class="article-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut explicabo ipsam
+              molestias praesentium amet, facilis voluptas tenetur ipsa alias.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="see-more-container">
+        <a href="#" class="btn see-more-btn place-items-center">
+          Veja mais <i class="ri-arrow-right-s-line"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Popular tags -->
+
+
+  <!-- Footer -->
+
+  <footer class="footer section">
+
+    <div class="footer-container container d-grid">
+
+      <div class="company-data">
+        <a href="./index.html">
+          <h2 class="logo">UniTech</h2>
+        </a>
+        <p class="company-description">
+          Um simples blog feito para compartilhar informações em várias áreas de Ti.
+        </p>
+
+
+        <ul class="lista social-media">
+          <li class="list-item">
+            <a href="#" class="list-link">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#" class="list-link">
+              <i class="ri-facebook-circle-line"></i>
+            </a>
+            <a href="#" class="list-link">
+              <i class="ri-twitter-line"></i>
+            </a>
+            <a href="#" class="list-link">
+              <i class="ri-pinterest-line"></i>
+            </a>
+          </li>
+        </ul>
+
+        <span class="copyright-notice">&copy; 2022 UniTech Blog. Todos os direitos reservados.</span>
+      </div>
+
+
+
+
+      <div>
+
+        <h6 class="title footer-title">Corporação</h6>
+
+        <ul class="list footer-list">
+          <li class="list-item">
+            <a href="#" class="list-link">Quem Somos</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">Contatos</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="list-link">Colaboradores</a>
+          </li>
+          <li class="list-item">
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+    
+  </footer>
+  <!-- Swiper.js -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
